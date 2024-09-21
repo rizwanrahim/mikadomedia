@@ -25,4 +25,4 @@ jobs:
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         run: |
-          firebase hosting:channel:deploy dev --project mikadomedia-a3de4 --non-interactive --expires 7d
+          firebase deploy --project mikadomedia-a3de4 --non-interactive --only hosting:dev-mikadomedia
