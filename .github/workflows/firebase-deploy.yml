@@ -20,11 +20,6 @@ jobs:
     - name: Set up Firebase Service Account
       run: echo "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}" > $GITHUB_WORKSPACE/firebase-key.json
 
-    - name: Authenticate with Firebase
-      env:
-        GOOGLE_APPLICATION_CREDENTIALS: $GITHUB_WORKSPACE/firebase-key.json
-      run: firebase login:ci --token ${{ secrets.FIREBASE_TOKEN }}
-
     - name: Deploy to Firebase Hosting
       env:
         GOOGLE_APPLICATION_CREDENTIALS: $GITHUB_WORKSPACE/firebase-key.json
