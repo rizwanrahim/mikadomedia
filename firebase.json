@@ -1,10 +1,22 @@
 {
-  "hosting": {
-    "public": "public",  // This should match the folder where your HTML is located
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
-  }
+  "hosting": [
+    {
+      "site": "dev-mikadomedia",
+      "public": "public/dev",  
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    {
+      "site": "mikadomedia-a3de4",
+      "public": "public/prod",  
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    }
+  ]
 }

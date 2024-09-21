@@ -1,4 +1,4 @@
-name: Deploy to Firebase Hosting
+name: Deploy on prod environment
 
 on:
   push:
@@ -25,4 +25,4 @@ jobs:
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         run: |
-          firebase deploy --project mikadomedia-a3de4 --non-interactive
+          firebase deploy --project mikadomedia-a3de4 --only hosting:mikadomedia-a3de4
