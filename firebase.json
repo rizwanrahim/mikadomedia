@@ -2,7 +2,7 @@
   "hosting": [
     {
       "site": "dev-mikadomedia",
-      "public": "public",  
+      "public": "public/dev",  
       "ignore": [
         "firebase.json",
         "**/.*",
@@ -11,7 +11,7 @@
     },
     {
       "site": "mikadomedia-a3de4",
-      "public": "public",  
+      "public": "public/prod",  
       "ignore": [
         "firebase.json",
         "**/.*",
