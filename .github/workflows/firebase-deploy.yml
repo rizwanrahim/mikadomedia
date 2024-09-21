@@ -25,4 +25,4 @@ jobs:
         GOOGLE_APPLICATION_CREDENTIALS: $GITHUB_WORKSPACE/firebase-key.json
       run: |
         firebase use --project mikadomedia-a3de4
-        firebase deploy --only hosting --token ${{ secrets.FIREBASE_TOKEN }}
+        firebase deploy --only hosting
