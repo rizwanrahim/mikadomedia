@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "public",  // This should match the folder where your HTML is located
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
