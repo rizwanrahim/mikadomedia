@@ -23,4 +23,4 @@ jobs:
         env:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ github.workspace }}/firebase-key.json
         run: |
-          firebase deploy --project mikadomedia-a3de4 --only hosting:dev
+          firebase deploy --project mikadomedia --only hosting:dev
