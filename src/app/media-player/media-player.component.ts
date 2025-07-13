@@ -17,7 +17,7 @@ export class MediaPlayerComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     const video = this.videoPlayer.nativeElement;
-    video.muted = false;
+    video.muted = true;
     video.play().catch((err) => {
       console.warn('Autoplay failed:', err);
     });
