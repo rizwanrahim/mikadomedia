@@ -1,13 +1,16 @@
 {
-  "projects": {
-    "default": "mikadomedia"
-  },
-  "targets": {
-    "mikadomedia": {
-      "hosting": {
-        "dev": ["dev-mikadomedia"],
-        "prod": ["mikadomedia-a3de4"]
-      }
+  "hosting": [
+    {
+      "site": "dev-mikadomedia",
+      "public": "public/dev",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "rewrites": [{ "source": "**", "destination": "/index.html" }]
+    },
+    {
+      "site": "mikadomedia-a3de4",
+      "public": "public/prod",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "rewrites": [{ "source": "**", "destination": "/index.html" }]
     }
-  }
+  ]
 }
