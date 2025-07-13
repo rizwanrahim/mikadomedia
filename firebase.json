@@ -2,14 +2,12 @@
   "hosting": [
     {
       "target": "dev",
-      "site": "dev-mikadomedia",
       "public": "public/dev",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [{ "source": "**", "destination": "/index.html" }]
     },
     {
       "target": "prod",
-      "site": "mikadomedia-a3de4",
       "public": "public/prod",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [{ "source": "**", "destination": "/index.html" }]
