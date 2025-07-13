@@ -1,0 +1,29 @@
+import {
+  Component,
+  Input,
+  ViewChild,
+  ElementRef,
+  AfterViewInit,
+} from '@angular/core';
+
+@Component({
+  selector: 'media-player',
+  templateUrl: './media-player.component.html',
+  styleUrls: ['./media-player.component.css'],
+})
+export class MediaPlayerComponent implements AfterViewInit {
+  @Input() mediaSrc: string = '';
+  @ViewChild('videoPlayer') videoPlayer!: ElementRef<HTMLVideoElement>;
+
+  ngAfterViewInit(): void {
+    const video = this.videoPlayer.nativeElement;
+    video.muted = true; // Required for autoplay
+    video.play().catch((err) => {
+      console.warn('Autoplay failed:', err);
+    });
+  }
+
+  onError(event: any) {
+    console.error('Media error:', event);
+  }
+}

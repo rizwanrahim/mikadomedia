@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { MediaPlayerComponent } from './media-player/media-player.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ToolbarComponent],
+  imports: [ToolbarComponent, MediaPlayerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

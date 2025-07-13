@@ -1,0 +1,11 @@
+<div class="media-container">
+  <video
+    #videoPlayer
+    width="100%"
+    autoplay
+    muted
+    playsinline
+    [src]="mediaSrc"
+    (error)="onError($event)"
+  ></video>
+</div>
