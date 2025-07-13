@@ -1,4 +1,3 @@
 remove-item .\public\dev\*
 ng build --output-path=docs --base-href=""
- move-item .\docs\browser\* .\public\dev    
- 
+move-item .\docs\browser\* .\public\dev    
