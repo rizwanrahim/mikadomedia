@@ -1,22 +1,13 @@
 {
-  "hosting": [
-    {
-      "site": "dev-mikadomedia",
-      "public": "public/dev",  
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ]
-    },
-    {
-      "site": "mikadomedia-a3de4",
-      "public": "public/prod",  
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ]
+  "projects": {
+    "default": "mikadomedia-a3de4"
+  },
+  "targets": {
+    "mikadomedia-a3de4": {
+      "hosting": {
+        "dev": ["dev-mikadomedia"],
+        "prod": ["mikadomedia-a3de4"]
+      }
     }
-  ]
+  }
 }
