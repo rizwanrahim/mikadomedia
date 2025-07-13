@@ -16,13 +16,16 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
 
-      - name: Firebase Deploy
+      - name: Write service account key to file
+        run: echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' > ${{ github.workspace }}/firebase-key.json
+
+      - name: Deploy to Firebase (Dev)
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ github.workspace }}/firebase-key.json
         run: |
-          firebase deploy --project mikadomedia-a3de4 --only hosting:dev-mikadomedia
+          firebase deploy --project mikadomedia-a3de4 --only hosting:dev
