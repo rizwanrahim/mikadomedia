@@ -85,8 +85,10 @@
     max-height: calc(100vh - 6rem);
     overflow-y: auto;
     font-size: 1.2rem;
+    font-family: roboto;
+    content: justify;
     line-height: 1.6;
-    padding-right: 1rem;
+    padding-right: 2rem;
     scroll-behavior: smooth;
   }
 }
