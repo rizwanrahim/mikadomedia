@@ -1,0 +1,92 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.1rem;
+      color: white;
+      transition: opacity 0.3s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        object-fit: contain;
+      }
+
+      .label {
+        display: none;
+      }
+    }
+
+    .about img {
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+    }
+
+    @media (min-width: 768px) {
+      a .label {
+        display: inline;
+      }
+    }
+  }
+}
+
+.about-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  z-index: 2000;
+  overflow: hidden;
+  padding: 2rem;
+  width: 100%;
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .about-scroll {
+    margin-top: 3.5rem;
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    padding-right: 1rem;
+    scroll-behavior: smooth;
+  }
+}
