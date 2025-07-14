@@ -32,16 +32,17 @@
       <img src="linkedin.png" alt="LinkedIn" />
       <span class="label">LinkedIn</span>
     </a>
-    <a
-      href="mailto:mikadomediaworks@gmail.com"
-      target="_blank"
-      class="linkedin"
-    >
-      <img src="gmail.png" alt="LinkedIn" />
+    <a href="mailto:mikadomediaworks@gmail.com" target="_blank" class="email">
+      <img src="gmail.png" alt="Email" />
       <span class="label">Email</span>
     </a>
-    <a href="javascript:void(0);" class="about" (click)="toggleAbout()">
-      <img src="info.png" class="about" alt="About" />
+    <a
+      href="javascript:void(0);"
+      class="about"
+      style="visibility: hidden"
+      (click)="toggleAbout()"
+    >
+      <img src="info.png" />
       <span class="label">About</span>
     </a>
   </div>
@@ -55,8 +56,7 @@
     <p>
       Mikado Media Works is a Mumbai based Production Company focused on quality
       storytelling, striking visuals, and innovative designs.
-      <br />
-      <br />
+      <br /><br />
       Phone: <a href="tel:+919892998906">+91 989 299 8906</a>
     </p>
   </div>

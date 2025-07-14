@@ -5,6 +5,6 @@
   overflow: hidden;
 
   @media (min-width: 768px) {
-    width: 89%;
+    width: 60%;
   }
 }

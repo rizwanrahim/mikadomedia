@@ -13,15 +13,20 @@
 
   .social-links {
     display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
 
     a {
+      flex: 1; /* Equal width for all links */
+      text-align: center;
       text-decoration: none;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 0.5rem;
-      font-size: 1.1rem;
+      gap: 0.3rem;
+      font-size: 0.9rem;
       color: white;
       transition: opacity 0.3s;
 
@@ -41,15 +46,21 @@
       }
     }
 
-    .about img {
-      width: 32px;
-      height: 32px;
-      border-radius: 6px;
+    a.about img {
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
     }
 
     @media (min-width: 768px) {
       a .label {
         display: inline;
+      }
+
+      a {
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
       }
     }
   }
@@ -63,11 +74,11 @@
   z-index: 2000;
   overflow: hidden;
   padding: 2rem;
-  width: 100%;
+
   .close-btn {
     position: absolute;
     top: 1rem;
-    right: 5rem;
+    right: 2rem;
     font-size: 2rem;
     background: none;
     border: none;
@@ -85,8 +96,7 @@
     max-height: calc(100vh - 6rem);
     overflow-y: auto;
     font-size: 1.2rem;
-    font-family: roboto;
-    content: justify;
+    font-family: Roboto, sans-serif;
     line-height: 1.6;
     padding-right: 2rem;
     scroll-behavior: smooth;
