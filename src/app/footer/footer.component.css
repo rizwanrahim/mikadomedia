@@ -1,5 +1,4 @@
 .footer {
-  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -10,16 +9,21 @@
   display: flex;
   justify-content: center;
   z-index: 1000;
+  box-sizing: border-box;
+  overflow-x: hidden;
 
   .social-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     padding: 0 1rem;
+    width: 100%;
 
     a {
-      flex: 1; /* Equal width for all links */
+      flex: 1 1 0;
+      min-width: 0; /* Prevent content from forcing overflow */
       text-align: center;
       text-decoration: none;
       display: flex;
@@ -63,42 +67,5 @@
         gap: 0.5rem;
       }
     }
-  }
-}
-
-.about-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.85);
-  color: #fff;
-  z-index: 2000;
-  overflow: hidden;
-  padding: 2rem;
-
-  .close-btn {
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-
-    &:hover {
-      opacity: 0.8;
-    }
-  }
-
-  .about-scroll {
-    margin-top: 3.5rem;
-    max-height: calc(100vh - 6rem);
-    overflow-y: auto;
-    font-size: 1.2rem;
-    font-family: Roboto, sans-serif;
-    line-height: 1.6;
-    padding-right: 2rem;
-    scroll-behavior: smooth;
   }
 }

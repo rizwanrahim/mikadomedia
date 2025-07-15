@@ -1,20 +1,14 @@
-<div class="rotating-icons-container">
-  <div class="icon-strip">
-    <div class="icon-set">
-      <img
-        *ngFor="let icon of icons"
-        [src]="icon"
-        [ngClass]="icon.split('.')[0]"
-        alt="icon"
-      />
-    </div>
-    <div class="icon-set">
-      <img
-        *ngFor="let icon of icons"
-        [src]="icon"
-        [ngClass]="icon.split('.')[0]"
-        alt="icon"
-      />
-    </div>
-  </div>
-</div>
+<ngx-fast-marquee
+  speed="medium"
+  direction="left"
+  [autoFill]="true"
+  [pauseOnHover]="true"
+>
+  <img
+    *ngFor="let icon of icons"
+    [src]="icon"
+    [ngClass]="icon.split('.')[0]"
+    alt="icon"
+    class="marquee-icon"
+  />
+</ngx-fast-marquee>

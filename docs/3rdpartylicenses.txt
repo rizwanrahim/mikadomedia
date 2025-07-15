@@ -941,6 +941,11 @@ Awesome, nor vice versa. **Please do not use brand logos for any purpose except
 to represent the company, product, or service to which they refer.**
 
 --------------------------------------------------------------------------------
+Package: ngx-fast-marquee
+License: "MIT"
+
+
+--------------------------------------------------------------------------------
 Package: zone.js
 License: "MIT"
 
