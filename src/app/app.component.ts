@@ -5,6 +5,7 @@ import { FooterComponent } from './footer/footer.component';
 import { RotatingIconsComponent } from './rotating-icons/rotating-icons.component';
 import { NgFor, NgIf } from '@angular/common';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ConnectUsComponent } from './connect-us/connect-us.component';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     FooterComponent,
     RotatingIconsComponent,
     AboutMeComponent,
+    ConnectUsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
