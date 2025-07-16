@@ -6,6 +6,7 @@ import { RotatingIconsComponent } from './rotating-icons/rotating-icons.componen
 import { NgFor, NgIf } from '@angular/common';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ConnectUsComponent } from './connect-us/connect-us.component';
+import { ServiceCategoryComponent } from './service-category/service-category.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ import { ConnectUsComponent } from './connect-us/connect-us.component';
     RotatingIconsComponent,
     AboutMeComponent,
     ConnectUsComponent,
+    ServiceCategoryComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
