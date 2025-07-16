@@ -1,6 +1,6 @@
 .horizontal-wrapper {
   display: flex;
-  padding: 1.5rem;
+  padding: 1rem;
   overflow-x: auto;
   position: relative;
   height: 170px;
@@ -14,7 +14,6 @@
   justify-content: left;
   align-items: center;
   padding: 1rem;
-  border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   color: #000;
   position: relative;
