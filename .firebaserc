@@ -3,7 +3,7 @@
     "default": "mikadomedia2"
   },
   "targets": {
-    "mikadomedia-a3de4": {
+    "mikadomedia2": {
       "hosting": {
         "dev": [
           "dev-mikadomedia2"
