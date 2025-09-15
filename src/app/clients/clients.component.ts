@@ -3,10 +3,10 @@ import { Component } from '@angular/core';
 import { NgxFastMarqueeModule } from 'ngx-fast-marquee';
 
 @Component({
-  selector: 'rotating-icons',
+  selector: 'clients',
   imports: [NgFor, NgClass, NgxFastMarqueeModule],
-  templateUrl: './rotating-icons.component.html',
-  styleUrl: './rotating-icons.component.css',
+  templateUrl: './clients.component.html',
+  styleUrl: './clients.component.css',
 })
 export class RotatingIconsComponent {
   icons = [

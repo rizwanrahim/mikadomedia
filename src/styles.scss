@@ -2,13 +2,10 @@
 
 html {
   color-scheme: light dark;
-  @include mat.theme(
-    (
-      color: mat.$cyan-palette,
+  @include mat.theme((color: mat.$cyan-palette,
       typography: Roboto,
       density: 0,
-    )
-  );
+    ));
 }
 
 body {
@@ -22,4 +19,12 @@ body {
 
 * {
   font-family: "Roboto", sans-serif;
+}
+
+.section {
+  color: #FDC426;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }

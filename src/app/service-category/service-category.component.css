@@ -1,17 +1,3 @@
-.services-section {
-  padding: 20px 20px;
-  text-align: center;
-  font-size: 1.5rem;
-  color: #FDC426;
-}
-
-.services-section h2 {
-  color: #FDC426;
-  margin-bottom: 40px;
-  font-size: 1rem;
-  text-align: center;
-}
-
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
