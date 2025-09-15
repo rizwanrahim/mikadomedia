@@ -2,4 +2,29 @@
   <img src="mikado-logo.png" alt="Logo" class="logo" />
   <span class="app-title">Mikado Media</span>
   <span class="spacer"></span>
+
+  <!-- Desktop Menu -->
+  <div class="desktop-menu">
+    <button mat-button (click)="scrollTo('home')">Home</button>
+    <button mat-button (click)="scrollTo('services')">Services</button>
+    <button mat-button (click)="scrollTo('about')">About Us</button>
+    <button mat-button (click)="scrollTo('clients')">Clients</button>
+    <button mat-button (click)="scrollTo('connect')">Connect</button>
+  </div>
+
+  <!-- Mobile Hamburger -->
+  <button mat-icon-button class="mobile-menu" (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
 </mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="over" position="end" class="sidenav">
+    <button mat-button class="sidenav-item" (click)="scrollTo('home')">Home</button>
+    <button mat-button class="sidenav-item" (click)="scrollTo('services')">Services</button>
+    <button mat-button class="sidenav-item" (click)="scrollTo('about')">About Us</button>
+    <button mat-button class="sidenav-item" (click)="scrollTo('clients')">Clients</button>
+    <button mat-button class="sidenav-item" (click)="scrollTo('connect')">Connect</button>
+  </mat-sidenav>
+  <mat-sidenav-content></mat-sidenav-content>
+</mat-sidenav-container>
