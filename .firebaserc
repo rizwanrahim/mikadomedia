@@ -1,12 +1,16 @@
 {
   "projects": {
-    "default": "mikadomedia-a3de4"
+    "default": "mikadomedia2"
   },
   "targets": {
-    "mikadomedia-a3de4": {
+    "mikadomedia2": {
       "hosting": {
-        "dev": ["dev-mikadomedia"],
-        "prod": ["mikadomedia-a3de4"]
+        "dev": [
+          "dev-mikadomedia2"
+        ],
+        "prod": [
+          "mikadomedia2"
+        ]
       }
     }
   }
