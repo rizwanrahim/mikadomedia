@@ -1,57 +1,123 @@
-.horizontal-wrapper {
-  display: flex;
-  padding: 1rem;
-  overflow-x: auto;
-  position: relative;
-  height: 170px;
+.services-section {
+  padding: 20px 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
-.category {
-  flex: 0 0 auto;
-  width: 50%;
-  min-height: 120px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  padding: 1rem;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  color: #000;
-  position: relative;
-  z-index: 1;
+.services-section h2 {
+  color: #FDC426;
+  margin-bottom: 40px;
+  font-size: 1rem;
   text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.service-card {
+  /* background-color: #1c1c1c; */
+  /* lighter than page bg */
+  /* border: 1px solid #2a2a2a; */
+  /* border-radius: 10px; */
+  padding: 25px 15px;
+  transition: all 0.3s ease;
+  text-align: center;
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  /* subtle shadow */
+}
+
+.service-card:hover {
+  border: 1px solid #FDC426;
+  box-shadow: 0 0 15px rgba(253, 196, 38, 0.6);
+  /* gold glow */
+  transform: translateY(-2px);
+}
+
+
+.service-card i {
+  font-size: 36px;
+  margin-bottom: 12px;
   transition: transform 0.3s ease;
 }
 
-@media screen and (min-width: 768px) {
-  .category {
-    width: 13%;
+.service-card:hover i {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.service-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.service-card p {
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* Icon colors */
+.icon-corporate {
+  color: #4FC3F7;
+}
+
+.icon-3d {
+  color: #FF7043;
+}
+
+.icon-fiction {
+  color: #BA68C8;
+}
+
+.icon-award {
+  color: #FFD700;
+}
+
+.icon-tv {
+  color: #29B6F6;
+}
+
+.icon-edu {
+  color: #66BB6A;
+}
+
+.icon-info {
+  color: #FFCA28;
+}
+
+.icon-social {
+  color: #EC407A;
+}
+
+@media (max-width: 600px) {
+  .services-section {
+    padding: 20px 0;
+    /* keep top/bottom padding only */
   }
-}
 
-.category:hover {
-  z-index: 999;
-  transform: scale(1.05);
-}
+  .services-grid {
+    padding: 0 15px;
+    /* add left/right gap on mobile */
+  }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.3rem;
-}
+  .services-section h2 {
+    font-size: 24px;
+  }
 
-.words div {
-  font-size: 1rem;
-  font-weight: 500;
-  font-family: roboto;
-}
+  .service-card h3 {
+    font-size: 16px;
+  }
 
-.section-heading {
-  width: 100%;
-  color: white;
-  padding-top: 2rem;
-  text-align: center;
-  font-size: 1rem;
-  line-height: 1.2;
-  font-family: roboto;
+  .service-card p {
+    font-size: 12px;
+  }
+
+  .service-card i {
+    font-size: 30px;
+  }
 }
