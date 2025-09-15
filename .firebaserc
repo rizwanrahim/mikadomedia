@@ -9,7 +9,7 @@
           "dev-mikadomedia2"
         ],
         "prod": [
-          "mikadomedia"
+          "mikadomedia2"
         ]
       }
     }
