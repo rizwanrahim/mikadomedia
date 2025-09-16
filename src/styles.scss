@@ -19,6 +19,11 @@ body {
 
 * {
   font-family: "Roboto", sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE/Edge */
 }
 
 .section {

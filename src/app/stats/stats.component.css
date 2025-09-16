@@ -10,16 +10,9 @@
 
 .stat-card {
     padding: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); */
     border: 1px solid transparent;
     transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
-}
-
-.stat-card:hover {
-    transform: translateY(-5px);
-    border: 1px solid #FDC426;
-    box-shadow: 0 0 15px rgba(253, 196, 38, 0.7);
-    /* golden glow */
 }
 
 .stat-card h2 {

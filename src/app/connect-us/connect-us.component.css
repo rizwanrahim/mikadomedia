@@ -52,6 +52,10 @@
   background-color: #0077b5;
 }
 
+.social-icons a.twitter:hover {
+  background-color: black;
+}
+
 .social-icons a.email:hover {
   background-color: #d44638;
 }
