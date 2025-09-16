@@ -5,11 +5,13 @@ import {
   ElementRef,
   AfterViewInit,
 } from '@angular/core';
+import { RotatingButtonComponent } from '../rotating-button/rotating-button.component';
 
 @Component({
   selector: 'media-player',
   templateUrl: './media-player.component.html',
   styleUrls: ['./media-player.component.css'],
+  imports: [RotatingButtonComponent],
 })
 export class MediaPlayerComponent implements AfterViewInit {
   @Input() mediaSrc: string = '';

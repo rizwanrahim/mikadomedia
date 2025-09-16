@@ -1,0 +1,24 @@
+.cta-btn {
+    background: #fdc426;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 250px;
+    height: 2.5em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.service {
+    display: inline-block;
+    transition: transform 1s ease, opacity 1s ease;
+    position: absolute;
+}

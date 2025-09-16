@@ -6,8 +6,8 @@
   <!-- Desktop Menu -->
   <div class="desktop-menu">
     <button mat-button (click)="scrollTo('home')">Home</button>
-    <button mat-button (click)="scrollTo('services')">Services</button>
     <button mat-button (click)="scrollTo('about')">About Us</button>
+    <button mat-button (click)="scrollTo('services')">Services</button>
     <button mat-button (click)="scrollTo('clients')">Clients</button>
     <button mat-button (click)="scrollTo('connect')">Connect</button>
   </div>
@@ -26,8 +26,8 @@
   </div> -->
   <div class="offcanvas-body">
     <button class="btn sidenav-item" data-bs-dismiss="offcanvas" (click)="scrollTo('home')">Home</button>
-    <button class="btn sidenav-item" data-bs-dismiss="offcanvas" (click)="scrollTo('services')">Services</button>
     <button class="btn sidenav-item" data-bs-dismiss="offcanvas" (click)="scrollTo('about')">About Us</button>
+    <button class="btn sidenav-item" data-bs-dismiss="offcanvas" (click)="scrollTo('services')">Services</button>
     <button class="btn sidenav-item" data-bs-dismiss="offcanvas" (click)="scrollTo('clients')">Clients</button>
     <button class="btn sidenav-item" data-bs-dismiss="offcanvas" (click)="scrollTo('connect')">Connect</button>
   </div>
@@ -35,9 +35,9 @@
 
 <div style="padding-top: 58px">
   <media-player [mediaSrc]="'mika-media-landing.mp4'"></media-player>
-  <service-category id="services"></service-category>
   <about-us id="about"></about-us>
-  <stats></stats>
+  <stats />
+  <service-category id="services"></service-category>
   <clients id="clients"></clients>
   <connect-us id="connect"></connect-us>
 </div>

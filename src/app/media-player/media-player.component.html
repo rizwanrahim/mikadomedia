@@ -1,12 +1,14 @@
-<div class="media-container">
-  <video
-    #videoPlayer
-    width="100%"
-    autoplay
-    muted
-    playsinline
-    [src]="mediaSrc"
-    (click)="toggleMute()"
-    (error)="onError($event)"
-  ></video>
+<div class="media-section">
+  <!-- Left: Video -->
+  <div class="media-container">
+    <video #videoPlayer autoplay muted playsinline [src]="mediaSrc" (click)="toggleMute()"
+      (error)="onError($event)"></video>
+  </div>
+
+  <!-- Right: Text -->
+  <div class="media-text">
+    <small class="subtitle">Experts in Cinematic Branding</small>
+    <h2>Where Ideas<br />Meet Frames.</h2>
+    <rotating-button />
+  </div>
 </div>
