@@ -9,6 +9,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { StatsComponent } from "./stats/stats.component";
 @Component({
   selector: 'app-root',
   imports: [
@@ -18,7 +19,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     ConnectUsComponent,
     ServiceCategoryComponent,
     ClientsComponent,
-    MatToolbarModule, MatIconModule, MatButtonModule, MatSidenavModule
+    MatToolbarModule, MatIconModule, MatButtonModule, MatSidenavModule,
+    StatsComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
