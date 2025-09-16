@@ -1,4 +1,38 @@
-<toolbar />
+<mat-toolbar class="navbar">
+  <img src="mikado-logo.png" alt="Logo" class="logo" />
+  <span class="app-title">Mikado Media</span>
+  <span class="spacer"></span>
+
+  <!-- Desktop Menu -->
+  <div class="desktop-menu">
+    <button mat-button (click)="scrollTo('home')">Home</button>
+    <button mat-button (click)="scrollTo('services')">Services</button>
+    <button mat-button (click)="scrollTo('about')">About Us</button>
+    <button mat-button (click)="scrollTo('clients')">Clients</button>
+    <button mat-button (click)="scrollTo('connect')">Connect</button>
+  </div>
+
+  <!-- Mobile Hamburger (Bootstrap Offcanvas Trigger) -->
+  <button class="btn mobile-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>
+
+<!-- Bootstrap Offcanvas Menu -->
+<div class="offcanvas offcanvas-end sidenav" tabindex="-1" id="mobileMenu">
+  <!-- <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menu</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  </div> -->
+  <div class="offcanvas-body">
+    <button class="btn sidenav-item" data-bs-dismiss="offcanvas" (click)="scrollTo('home')">Home</button>
+    <button class="btn sidenav-item" data-bs-dismiss="offcanvas" (click)="scrollTo('services')">Services</button>
+    <button class="btn sidenav-item" data-bs-dismiss="offcanvas" (click)="scrollTo('about')">About Us</button>
+    <button class="btn sidenav-item" data-bs-dismiss="offcanvas" (click)="scrollTo('clients')">Clients</button>
+    <button class="btn sidenav-item" data-bs-dismiss="offcanvas" (click)="scrollTo('connect')">Connect</button>
+  </div>
+</div>
+
 <div style="padding-top: 58px">
   <media-player [mediaSrc]="'mika-media-landing.mp4'"></media-player>
   <service-category id="services"></service-category>
