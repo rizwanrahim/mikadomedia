@@ -7,25 +7,18 @@
 }
 
 .service-card {
-  /* background-color: #1c1c1c; */
-  /* lighter than page bg */
-  /* border: 1px solid #2a2a2a; */
-  /* border-radius: 10px; */
   padding: 25px 15px;
   transition: all 0.3s ease;
   text-align: center;
   transform: translateY(0);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-  /* subtle shadow */
 }
 
 .service-card:hover {
   border: 1px solid #FDC426;
   box-shadow: 0 0 15px rgba(253, 196, 38, 0.6);
-  /* gold glow */
   transform: translateY(-2px);
 }
-
 
 .service-card i {
   font-size: 36px;
@@ -80,15 +73,16 @@
   color: #EC407A;
 }
 
+/* Mobile adjustments */
 @media (max-width: 600px) {
   .services-section {
     padding: 20px 0;
-    /* keep top/bottom padding only */
   }
 
   .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* always 2 per row */
     padding: 0 15px;
-    /* add left/right gap on mobile */
   }
 
   .services-section h2 {

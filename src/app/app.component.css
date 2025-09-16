@@ -39,6 +39,24 @@
     color: #fff;
     font-weight: 500;
     text-transform: none;
+    transition: color 0.3s;
+    background: transparent !important;
+    /* remove hover background */
+    box-shadow: none !important;
+    /* remove any shadow */
+}
+
+/* Remove Angular Material ripple/hover overlay */
+.desktop-menu button::before,
+.desktop-menu button::after {
+    background: transparent !important;
+}
+
+.desktop-menu button:hover {
+    color: #FDC426 !important;
+    /* gold hover */
+    background: transparent !important;
+    /* no dark circle */
 }
 
 /* Mobile Menu Button */
@@ -94,7 +112,6 @@
 
 .offcanvas-body .btn:hover {
     color: #FDC426;
-    /* highlight on hover */
 }
 
 /* Staggered Animation for Offcanvas Items */

@@ -18,6 +18,10 @@
 .media-text {
   color: #fff;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center subtitle, heading, and button on mobile */
 }
 
 .media-text .subtitle {
@@ -64,6 +68,8 @@
 
   .media-text {
     text-align: left;
+    align-items: flex-start;
+    /* Button left aligned on desktop */
   }
 
   .media-text h2 {
