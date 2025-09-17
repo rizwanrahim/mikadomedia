@@ -10,6 +10,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { StatsComponent } from "./stats/stats.component";
+import { WorkComponent } from "./work/work.component";
 @Component({
   selector: 'app-root',
   imports: [
@@ -20,7 +21,8 @@ import { StatsComponent } from "./stats/stats.component";
     ServiceCategoryComponent,
     ClientsComponent,
     MatToolbarModule, MatIconModule, MatButtonModule, MatSidenavModule,
-    StatsComponent
+    StatsComponent,
+    WorkComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

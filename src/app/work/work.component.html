@@ -1,0 +1,15 @@
+<h2 class="section">Our Work</h2>
+
+<div class="reels-container">
+    <div class="reel" *ngFor="let reel of reels" (click)="openVideo(reel.id)">
+        <img [src]="'https://img.youtube.com/vi/' + reel.id + '/hqdefault.jpg'" [alt]="reel.title" />
+        <div class="play-button"></div>
+    </div>
+</div>
+
+<!-- Popup -->
+<div class="popup" *ngIf="activeVideo" (click)="closeVideo()">
+    <div class="popup-content" (click)="$event.stopPropagation()">
+        <iframe [src]="activeVideo | safeUrl" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
